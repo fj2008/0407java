@@ -26,7 +26,9 @@ ServerSocket  ServerSocket = null;
 			//5초(밀리초 단위로 시간을 설정하기 때문에 1초 * 1000
 			 ServerSocket.setSoTimeout(5*1000);
 			System.out.println(getTime() + socket.getInetAddress() + "로부터 연결요청이 들어왔습니다.");
+			//클라이언트의 pore
 			System.out.println("getPort() =" + socket.getPort());
+			//서버의 port
 			System.out.println("getLocalport() = " + socket.getLocalPort());
 			
 			OutputStream out = socket.getOutputStream();
